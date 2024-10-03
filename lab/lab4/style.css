@@ -103,3 +103,15 @@ body {
 .education h4 {
     color: white;
 }
+
+.about {
+    margin-bottom: 40px;
+}
+
+.title2 {
+    color: rgb(10, 68, 143);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 9px;
+}
+

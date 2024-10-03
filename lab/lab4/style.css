@@ -88,3 +88,18 @@ body {
 .contactuud ul li span {
     color: white;
 }
+
+.education ul li {
+    list-style: none;
+}
+.education li {
+    margin-bottom: 13px;
+}
+
+.education h5 {
+    color: aquamarine;
+}
+
+.education h4 {
+    color: white;
+}

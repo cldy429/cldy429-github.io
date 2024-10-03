@@ -106,6 +106,7 @@ body {
 
 .about {
     margin-bottom: 40px;
+    
 }
 
 .title2 {
@@ -115,3 +116,23 @@ body {
     margin-bottom: 9px;
 }
 
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 19px 0;
+}
+
+.about .box .ajil_jil {
+    min-width: 150px;
+}
+
+.about .box .ajil_jil h5 {
+    text-transform: uppercase;
+    color: rgb(117, 117, 117);
+}
+
+.about .box .text h4{
+    text-transform: uppercase;
+    color: rgb(0, 78, 167);
+    font-size: 16px;
+}

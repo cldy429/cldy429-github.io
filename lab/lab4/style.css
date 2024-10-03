@@ -12,6 +12,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
+
 .container .zuun_Tal {
     position: relative;
     background: rgb(3, 3, 99);
@@ -22,4 +23,43 @@ body {
     position: relative;
     background: white;
     padding: 40px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 17px;
+    border-bottom: 1px solid gray;
+    flex-direction: column;
+}
+
+.profileText .zurag {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .zurag img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.profileText h2 {
+    color: white;
+    margin-top: 17px;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.profileText h2 span {
+    font-size: 0.8em;
 }

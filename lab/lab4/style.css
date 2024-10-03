@@ -63,3 +63,28 @@ body {
 .profileText h2 span {
     font-size: 0.8em;
 }
+
+.contactuud {
+    padding-top: 20px;
+}
+
+.title {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactuud ul {
+    position: relative;
+}
+
+.contactuud ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contactuud ul li span {
+    color: white;
+}

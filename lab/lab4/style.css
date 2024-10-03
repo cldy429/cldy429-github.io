@@ -1,0 +1,25 @@
+body {
+    background: lightcyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.container .zuun_Tal {
+    position: relative;
+    background: rgb(3, 3, 99);
+    padding: 40px;
+}
+
+.container .baruun_Tal {
+    position: relative;
+    background: white;
+    padding: 40px;
+}

@@ -7,39 +7,47 @@ body {
 }
 
 header {
+    display: flex;
     position: relative;
     width: 100%;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    max-width: 1200px;
 }
 
 .container {
     position: relative;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    height: 600px;
+    margin-bottom: 20px;
 }
 
 main {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
- .right {
+.right {
     text-align: center;
     align-items: center;
     position: relative;
     justify-content: center;
     
- }
- 
-footer {
-    position: relative;
-    width: 100%;
 }
 
 header, footer {
     background: #13124F;
     color: white;
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 20px;
 }
 
 .alert {
@@ -47,6 +55,8 @@ header, footer {
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .messages {
@@ -65,19 +75,25 @@ header, footer {
 .mur2 {
     background: #13124F;
     color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 button {
     background: #F61067;
-    width: 90%;
+    width: 100%;
     margin-bottom: 10px;
     color: white;
     height: 30px;
 }
 
 input {
-    width: 90%;
     margin-bottom: 10px;
+    width: 90%;
 }
 
 .mur3 {
@@ -95,7 +111,46 @@ iframe {
 }
 
 .zuun {
-    width: 90%;
-    
+    width: 95%;
 }
 
+.button1 {
+    width: 90px;
+    font-size: 10px;
+}
+
+.headerspan {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 350px;
+}
+
+h3 {
+    font-size: 30px;
+    border-bottom: 2px solid rgb(235, 235, 235);
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.footerp {
+    font-size: 9px;
+    margin-top: 10px;
+    margin-bottom: 13px;
+}
+
+.inputsec {
+    width: 95%;
+    text-align: justify;
+}
+
+table {
+    border-spacing: 0px;
+}

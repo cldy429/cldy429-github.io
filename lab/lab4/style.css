@@ -1,72 +1,38 @@
 body {
-    background: lightcyan;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .container {
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.container .zuun_Tal {
+.profile {
     position: relative;
-    background: rgb(3, 3, 99);
-    padding: 40px;
+    background: rgb(3, 3, 99, .7);
+    padding: 30px;
+    border-radius: 25px;
 }
 
-.container .baruun_Tal {
+.info {
     position: relative;
-    background: white;
-    padding: 40px;
+    background: rgb(255, 255, 255, .7);
+    padding: 30px;
+    border-radius: 25px;
 }
 
-.profileText {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-bottom: 17px;
-    border-bottom: 1px solid gray;
-    flex-direction: column;
-}
-
-.profileText .zurag {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.profileText .zurag img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-}
-
-.profileText h2 {
-    color: white;
-    margin-top: 17px;
-    font-size: 1.5em;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.profileText h2 span {
-    font-size: 0.8em;
-}
-
-.contactuud {
-    padding-top: 20px;
-}
+/* profile хэсгийн css */
 
 .title {
     color: white;
@@ -75,20 +41,46 @@ body {
     margin-bottom: 20px;
 }
 
-.contactuud ul {
+/* profileText class-н css */
+.profileText {
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
 }
 
-.contactuud ul li {
-    position: relative;
-    list-style: none;
-    margin: 10px 0;
-}
-
-.contactuud ul li span {
+.profileText h2 {
     color: white;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
 }
 
+.profileText h3 {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.propic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/* contact class-н css */
+.contact {
+    padding-top: 15px;
+}
+
+.contact ul li {
+    color: white;
+    list-style: none;
+}
+/* education class-н css */
 .education ul li {
     list-style: none;
 }
@@ -104,34 +96,45 @@ body {
     color: white;
 }
 
-.about {
-    margin-bottom: 40px;
-}
+/* info хэсгийн css */
 
 .title2 {
     color: rgb(10, 68, 143);
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 9px;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    margin-left: 40px;
 }
 
-.about .box {
+/* introduction class-н css */
+.introduction {
+    margin-bottom: 50px;
+}
+.introduction p {
+    font-size: 1.3em;
+    text-align: justify;
+}
+/* experience class-н css */
+.box {
     display: flex;
     flex-direction: row;
     margin: 19px 0;
 }
-
-.about .box .ajil_jil {
-    min-width: 150px;
-}
-
-.about .box .ajil_jil h5 {
+h5 {
     text-transform: uppercase;
     color: rgb(117, 117, 117);
 }
-
-.about .box .text h4{
+.text h4{   
     text-transform: uppercase;
     color: rgb(0, 78, 167);
     font-size: 16px;
+}
+.year {
+    min-width: 150px;
+}
+
+.box p {
+    font-size: 20px;
+    text-align: justify;
 }

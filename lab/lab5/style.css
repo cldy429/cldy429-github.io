@@ -152,7 +152,7 @@ table {
     border-spacing: 0px;
 }
 
-/* Tablet Styles */
+/* Таблет */
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr; /* 1 шугаманд оруулав */
@@ -183,7 +183,7 @@ table {
     }
 }
 
-/* Phone Styles */
+/* Гар утас */
 @media (max-width: 480px) {
     h1 {
         font-size: 28px;
@@ -204,5 +204,9 @@ table {
 
     input {
         width: 98%; /* Утсанд зориулж томсгов */
+    }
+
+    .alert {
+        text-align: center;
     }
 }

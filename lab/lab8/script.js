@@ -60,7 +60,7 @@ function main2() {
 }
 
 // 3-р бодлогоны javascript
-function findDoor() {
+function main3() {
     const doorNumber = parseInt(document.getElementById('doorInput').value);
 
     // Орцыг тооцоолох (1-3)

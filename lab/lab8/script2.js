@@ -1,4 +1,4 @@
-function calculateTime() {
+function main2() {
     // Step 1: Хэрэглэгчээс өгсөн тоог аваад Float болгоно
     const distance = parseFloat(document.getElementById('distanceInput').value);
 
@@ -7,7 +7,7 @@ function calculateTime() {
     let timeInHours = distance / speeddiff;
 
     // Step 3: Хугацаагаа минут болон секунд руу хөрвүүлнэ
-    let timeInMinutes = timeInHours * 60; // Convert hours to minutes
+    let timeInMinutes = timeInHours * 60; // Минут руу хөрвүүлэх
     let minutes = Math.floor(timeInMinutes); // Бүхэл минутыг авах
     let seconds = Math.round((timeInMinutes - minutes) * 60); // Бүхэл минутыг хасаад секунд руу шилжүүлэх
 

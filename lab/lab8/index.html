@@ -4,24 +4,38 @@
     <title>Лаборатори 8</title>
 </head>
 <body>
-    <h1>Гараас өгсөн тооны цифрүүдийн нийлбэр нь палимдром мөн эсэхийг шалгах</h1>
+    <h1>Цифрүүдийн нийлбэр нь палимдром мөн эсэхийг шалгах</h1>
 
     <p>Тоог оруул:</p>
     
     <input type="number" id="numberInput" placeholder="Enter a number">
-    <button onclick="checkSumOfDigits()">Check</button>
+    <button onclick="main1()">Check</button>
     <p id="result1"></p>
 
     <script src="script1.js"></script>
+
 
     <h1>Чоно туулайг гүйцэх хугацаа</h1>
 
     <p>Чоно болон туулайн хоорондох зайг оруул (км):</p>
     <input type="number" id="distanceInput" placeholder="Distance in km">
-    <button onclick="calculateTime()">Calculate Time</button>
+    <button onclick="main2()">Calculate Time</button>
 
     <p id="result2"></p>
 
     <script src="script2.js"></script>
+
+
+    <h1>Хэд дэх хаалга вэ?</h1>
+
+    <p>Хаалганы дугаарыг оруул (1-108):</p>
+    <input type="number" id="doorInput">
+    <button onclick="findDoor()">Find Door</button>
+    <p id="result3"></p>
+
+    <script src="script3.js"></script>
+
+
+
 </body>
 </html>

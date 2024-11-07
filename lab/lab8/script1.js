@@ -7,6 +7,7 @@ function isPalindrome(num) {
         reversed = reversed * 10 + (num % 10);
         num = Math.floor(num / 10);
     }
+
     return original === reversed;
 }
 
@@ -21,7 +22,7 @@ function sumOfDigits(num) {
 }
 
 // Main функц, button дарахад ажиллана.
-function checkSumOfDigits() {
+function main1() {
     // Step 1: Хэрэглэгчээс оруулсан тоог оруулна.
     const number = parseInt(document.getElementById('numberInput').value);
     
@@ -29,9 +30,11 @@ function checkSumOfDigits() {
     const sum = sumOfDigits(number);
     
     // Step 3: Нийлбэрийг палиндром эсэхийг шалгана.
-    const resultMessage = isPalindrome(sum)
-        ? `Цифрүүдийн нийлбэр (${sum}) бол палиндром!`
-        : `Цифрүүдийн нийлбэр (${sum}) бол палиндром биш.`;
+    if (isPalindrome(sum)) {
+        resultMessage = "Цифрүүдийн нийлбэр бол палиндром!";
+    } else {
+        resultMessage = "Цифрүүдийн нийлбэр палиндром биш.";
+    }
 
     // Step 4: Үр дүнг хэвлэнэ
     document.getElementById('result1').textContent = resultMessage;

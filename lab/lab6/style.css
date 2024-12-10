@@ -6,6 +6,7 @@ body {
     margin: 0;
     justify-content: center;
     background-color: aquamarine;
+    font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -192,7 +193,49 @@ td button {
 footer {
     width: 100%;
     background-color: white;
-    border-top: 1px solid;
+}
+
+.footermenu {
+    text-align: center;
+}
+
+.footermenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footermenu li {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+.fmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3em;
+}
+
+.fmenu ul {
+    list-style-type: none;
+    font-size: 1.1em;
+}
+
+.fmenu ul li:not(:first-child) {
+    margin-bottom: 0.8em;
+}
+
+footer ul li a {
+    color: gray;
+}
+
+.footermenu ul li a {
+    color: black;
 }
 
 .ftr {
@@ -200,10 +243,12 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 3em;
+    border-top: 1px groove;
 }
 
 .ftr ul {
     list-style-type: none;
+    font-size: 1.1em;
 }
 
 .garchig {

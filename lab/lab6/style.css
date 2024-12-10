@@ -135,12 +135,18 @@ h1 {
 table {
     width: 100%;
     min-height: 1000px;
+    border-spacing: 0;
 }
 
 td {
     width: 50%;
     color: white;
-    
+    vertical-align: bottom;
+}
+
+td * {
+    margin-left: 1em;
+    margin-bottom: 1em;
 }
 
 td button {

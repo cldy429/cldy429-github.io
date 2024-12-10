@@ -8,23 +8,9 @@ body {
     background-color: aquamarine;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    float: left;
-}
-
-li a {
-    
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* header хэсгийн CSS */
@@ -34,6 +20,21 @@ header {
     flex-direction: column;
     width: 100%;
     margin: 0;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: left;
 }
 
 .top-bar {
@@ -89,12 +90,63 @@ header {
 /* Гол хэсгийн CSS */
 .container {
     width: 100%;
-    background-color: blueviolet;
-    height: 10em;
+    background-color: white;
+    margin: 0;
 }
+
+.gift {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.gift p {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.gift button {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+}
+
+.gift button:hover {
+    background-color: gray;
+}
+
+/* footer хэсгийн CSS */
 
 footer {
     width: 100%;
-    background-color:chocolate ;
-    height: 10em;
+    background-color: white;
+    border-top: 1px solid;
+}
+
+.ftr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3em;
+}
+
+.ftr ul {
+    list-style-type: none;
+}
+
+.garchig {
+    margin-bottom: 2em;
+}
+
+.ftr ul li:not(:first-child) {
+    margin-bottom: 0.8em;
 }

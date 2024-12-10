@@ -96,6 +96,7 @@ header li {
 
 .gift {
     text-align: center;
+    margin-bottom: 2em;
 }
 
 h1 {
@@ -122,6 +123,62 @@ h1 {
 
 .gift button:hover {
     background-color: gray;
+}
+
+.zurgan-menu {
+    width: 49%;
+    margin: 0;
+    height: 10em;
+    background-color: aliceblue;
+}
+
+table {
+    width: 100%;
+    min-height: 1000px;
+}
+
+td {
+    width: 50%;
+    color: white;
+    
+}
+
+td button {
+    background-color: white;
+    color: black;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+}
+
+.menu1 {
+    background-image: url(images/menu1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu2 {
+    background-image: url(images/menu2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu3 {
+    background-image: url(images/menu3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu4 {
+    background-image: url(images/menu4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* footer хэсгийн CSS */

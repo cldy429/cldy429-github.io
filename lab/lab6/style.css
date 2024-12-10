@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000em;
+    margin: 0;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+}
+
+li a {
+    
+}
+
+/* header хэсгийн CSS */
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
+    height: 100%;
+    background-color: rgb(230, 230, 230);
+    height: 2em;
+    padding: 0 3%;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos img {
+    width: 1.3em;
+    height: 1.3em;
+    margin-right: 1em;
+}
+
+.vertical-line {
+    border-right: 1px solid;
+    height: 12px;
+    margin: 12px;
+}
+
+.menu {
+    width: 94%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+    height: 4em;
+}
+
+.menu ul li {
+    margin: 10px;
+}
+
+.menu .icons img {
+    height: 1.2em;
+    width: 1.2em;
+    margin-right: 10px;
+}
+
+/* Гол хэсгийн CSS */
+.container {
+    width: 100%;
+    background-color: blueviolet;
+    height: 10em;
+}
+
+footer {
+    width: 100%;
+    background-color:chocolate ;
+    height: 10em;
+}

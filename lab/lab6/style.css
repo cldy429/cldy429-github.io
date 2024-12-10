@@ -94,9 +94,8 @@ header li {
     margin: 0;
 }
 
-.gift {
+.golheseg {
     text-align: center;
-    margin-bottom: 2em;
 }
 
 h1 {
@@ -106,12 +105,12 @@ h1 {
     margin-bottom: 0;
 }
 
-.gift p {
+.golheseg p {
     margin-top: 0;
     font-size: 20px;
 }
 
-.gift button {
+.golheseg button {
     background-color: black;
     color: white;
     padding: 12px;
@@ -119,9 +118,10 @@ h1 {
     font-weight: bold;
     border-radius: 30px;
     border: none;
+    margin-bottom: 2em;
 }
 
-.gift button:hover {
+.golheseg button:hover {
     background-color: gray;
 }
 

@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+}
+
+.container {
+    min-width: 1024px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.letters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.letters button {
+    color: white;
+    font-size: 1rem;
+    padding: 5px;
+    margin: 2px;
+    background-color: black;
+    border-radius: 3px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer; 
+    width: calc(100% / 9 - 3px);
+}
+
+.letters button:hover {
+    background-color: gray;
+}

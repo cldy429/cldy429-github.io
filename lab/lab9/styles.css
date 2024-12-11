@@ -20,6 +20,28 @@ body {
     border-radius: 5%;
 }
 
+.word {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.word .letter {
+    width: 30px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.word .letter.guessed {
+    border-color: transparent;
+    margin: -40px 0 35px;
+}
+
 .letters {
     display: flex;
     justify-content: center;

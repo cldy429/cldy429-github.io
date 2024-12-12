@@ -36,18 +36,17 @@ const getRandomWord = () => {
 }
 
 const gameOver = (isVictory) => {
-    setTimeout(() => {
-        const winText = isVictory ? `You found the word:` : `The correct word was:`;
-        win.querySelector("img").src =`content/${isVictory ? 'won': 'game-over'}.png`;
-        win.querySelector("h4").innerText = `${isVictory ? 'Congrats!': 'Game over!'}`;
-        win.querySelector("p").innerHTML =`${winText} <b>${randomAnswer}</b>`;
-        win.classList.add("show");
-    }, 300);
+    const winText = isVictory ? `You found the word:` : `The correct word was:`;
+    win.querySelector("img").src =`content/${isVictory ? 'won': 'game-over'}.png`;
+    win.querySelector("h4").innerText = `${isVictory ? 'Congrats!': 'Game over!'}`;
+    win.querySelector("p").innerHTML =`${winText} <b>${randomAnswer}</b>`;
+    win.classList.add("show");
+    console.log(isVictory);
 }
 
 const initGame = (button, clicked) => {
     if(randomAnswer.includes(clicked)) {
-        // Зөв таасан үсийг харуулах
+        // Зөв таасан үсгийг харуулах
         [...randomAnswer].forEach((letter, index) => {
         if(letter === clicked) {
             correct.push(letter);

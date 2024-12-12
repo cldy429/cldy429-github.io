@@ -1,0 +1,11 @@
+# robots.txt for https://www.nike.com
+
+# Allow all crawlers access to all content
+User-agent: *
+Disallow: /account/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /help/
+
+# Sitemap location
+Sitemap: https://www.nike.com/sitemap.xmlg

@@ -8,16 +8,62 @@ const questions = [
 
 const keyboardDiv = document.querySelector(".letters");
 const word = document.querySelector(".word");
+const lives = document.querySelector(".lives");
+const manImage = document.querySelector(".box img");
+const win = document.querySelector(".gameover");
+const playBtn = document.querySelector(".play-again");
+
+let randomAnswer, correct = [], live = 5;
+const minWrong = 0;
+
+const playAgain = () => {
+    correct = [];
+    live = 5;
+    manImage.src = `content/hangman-${live}.svg`;
+    lives.innerText = `${live}`;
+    keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
+    word.innerHTML = randomAnswer.split("").map(() => '<li class="letter"></li>').join("");
+    win.classList.remove("show");
+}
 
 const getRandomWord = () => {
     const { question, answer } = questions[Math.floor(Math.random() * questions.length)];
+    randomAnswer = answer;
     console.log(answer);
     document.querySelector(".question b").innerText = question;
-    word.innerHTML = answer.split("").map(() => '<li class="letter"></li>').join("");
+    playAgain();
+    
 }
 
-const initGame = (button, clickedLetter) => {
-    console.log(button, clickedLetter);
+const gameOver = (isVictory) => {
+    setTimeout(() => {
+        const winText = isVictory ? `You found the word:` : `The correct word was:`;
+        win.querySelector("img").src =`content/${isVictory ? 'won': 'game-over'}.png`;
+        win.querySelector("h4").innerText = `${isVictory ? 'Congrats!': 'Game over!'}`;
+        win.querySelector("p").innerHTML =`${winText} <b>${randomAnswer}</b>`;
+        win.classList.add("show");
+    }, 300);
+}
+
+const initGame = (button, clicked) => {
+    if(randomAnswer.includes(clicked)) {
+        // Зөв таасан үсийг харуулах
+        [...randomAnswer].forEach((letter, index) => {
+        if(letter === clicked) {
+            correct.push(letter);
+            word.querySelectorAll("li")[index].innerText = letter;
+            word.querySelectorAll("li")[index].classList.add("guessed");
+        }
+       })
+    } else {
+        live--;
+        manImage.src = `content/hangman-${live}.svg`;
+    }
+    button.disabled = true;
+    lives.innerText = `${live}`;
+
+    if(live === 0) return gameOver(false);
+    if(correct.length === randomAnswer.length) return gameOver(true);
 }
 
 for (let i = 97; i <= 122; i++) {
@@ -28,3 +74,4 @@ for (let i = 97; i <= 122; i++) {
 }
 
 getRandomWord();
+playBtn.addEventListener("click", getRandomWord);

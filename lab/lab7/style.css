@@ -258,3 +258,106 @@ footer ul li a {
 .ftr ul li:not(:first-child) {
     margin-bottom: 0.8em;
 }
+
+@media (max-width: 782px) {
+    body {
+        flex-direction: column;
+        font-size: 0.9em;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 1em;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 1em;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu ul li {
+        margin: 5px 0;
+    }
+
+    /* Adjusting header for smaller screens */
+    header ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header li {
+        margin: 5px 0;
+    }
+
+    /* Main content adjustments */
+    .golheseg h1 {
+        font-size: 30px;
+    }
+
+    .golheseg p {
+        font-size: 16px;
+    }
+
+    .golheseg button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* Image menu adjustments */
+    .zurgan-menu {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    table {
+        min-height: auto;
+    }
+
+    td {
+        width: 100%;
+        text-align: center;
+    }
+
+    td * {
+        margin-left: 0;
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 1em;
+    }
+
+    .footermenu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footermenu li {
+        margin: 0.5em 0;
+    }
+
+    .fmenu {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    .ftr {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ftr ul {
+        text-align: center;
+    }
+}

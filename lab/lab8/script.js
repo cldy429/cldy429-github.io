@@ -47,12 +47,12 @@ function main2() {
 
     // Step 2: Хугацааг олно
     const speeddiff = 7;
-    let timeInHours = distance / speeddiff;
+    let hour = distance / speeddiff;
 
     // Step 3: Хугацаагаа минут болон секунд руу хөрвүүлнэ
-    let timeInMinutes = timeInHours * 60; // Минут руу хөрвүүлэх
-    let minutes = Math.floor(timeInMinutes); // Бүхэл минутыг авах
-    let seconds = Math.floor((timeInMinutes - minutes) * 60); // Бүхэл минутыг хасаад секунд руу шилжүүлэх
+    let tminutes = hour * 60; // Минут руу хөрвүүлэх
+    let minutes = Math.floor(tminutes); // Бүхэл минутыг авах
+    let seconds = Math.floor((tminutes - minutes) * 60); // Бүхэл минутыг хасаад секунд руу шилжүүлэх
 
     // Step 4: Үр дүнг хэвлэх
     document.getElementById('result2').textContent = 

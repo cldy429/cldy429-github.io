@@ -212,3 +212,61 @@ h1 {
         font-size: 2rem;
     }
 }
+
+@media (max-width: 480px) {
+    body {
+        padding: 5vw;
+    }
+
+    .container {
+        min-width: 200px;
+        max-width: 90%; /* Max width adjusted for smaller screens */
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .box {
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .box img {
+        max-width: 150px;
+    }
+
+    .question {
+        font-size: 1.2rem;
+    }
+
+    .ami {
+        font-size: 2rem;
+    }
+    
+    .lives {
+        font-size: 1.5rem;
+    }
+
+    .word .letter {
+        width: 25px;
+        font-size: 1.5rem;
+    }
+
+    .letters button {
+        font-size: 0.8rem;
+        padding: 8px 0;
+        width: calc(100% / 8 - 5px);
+    }
+
+    .gameover .content {
+        max-width: 300px;
+    }
+
+    .gameover .content img {
+        max-width: 200px;
+    }
+
+    .gameover .content p {
+        font-size: 1.2rem;
+    }
+}

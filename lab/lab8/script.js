@@ -88,7 +88,7 @@ function gcd(a, b) {
 }
 
 function lcm(a, b) {
-    return Math.abs(a * b) / gcd(a, b);
+    return (a * b) / gcd(a, b);
 }
 
 function findLCM() {

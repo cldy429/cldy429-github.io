@@ -77,7 +77,7 @@ function main3() {
 }
 
 // 4-р бодлогоны javascript
-// Function to calculate the GCD of two numbers (Euclidean algorithm)
+
 function gcd(a, b) {
     while (b !== 0) {
         let temp = b;
@@ -87,26 +87,38 @@ function gcd(a, b) {
     return a;
 }
 
-// Function to calculate the LCM of two numbers
 function lcm(a, b) {
     return Math.abs(a * b) / gcd(a, b);
 }
 
-// Function to find the LCM of five numbers
 function findLCM() {
-    // Get values from input fields
     const num1 = parseInt(document.getElementById('num1').value);
     const num2 = parseInt(document.getElementById('num2').value);
     const num3 = parseInt(document.getElementById('num3').value);
     const num4 = parseInt(document.getElementById('num4').value);
     const num5 = parseInt(document.getElementById('num5').value);
 
-    // Calculate the LCM of all five numbers
-    let resultLCM = lcm(num1, num2);  // Find LCM of the first two numbers
-    resultLCM = lcm(resultLCM, num3); // Find LCM with the third number
-    resultLCM = lcm(resultLCM, num4); // Find LCM with the fourth number
-    resultLCM = lcm(resultLCM, num5); // Find LCM with the fifth number
+    let rlcm = lcm(num1, num2);
+    rlcm = lcm(rlcm, num3);
+    rlcm = lcm(rlcm, num4);
+    rlcm = lcm(rlcm, num5);
 
-    // Display the result
-    document.getElementById('result').textContent = `The LCM of the given numbers is: ${resultLCM}`;
+    document.getElementById('result4').textContent = rlcm;
+}
+
+
+// 5-р бодлогоны javascript
+function exerciseFive() {
+    const number = parseFloat(document.getElementById('numInput').value);
+    const currentTime = new Date();
+    const hours = currentTime.getHours();
+    let result;
+
+    if (hours >= 6 && hours < 18) {
+        result = number * number;
+    } else {
+        result = Math.sqrt(number);
+    }
+
+    document.getElementById('result5').textContent = result;
 }

@@ -189,10 +189,14 @@ h1 {
     }
 
     .gameover .content {
-        max-width: 300px;
+        max-width: 350px;
     }
 
     .gameover .content img {
-        max-width: 200px;
+        max-width: 250px;
+    }
+
+    .gameover .content p {
+        font-size: 2rem;
     }
 }

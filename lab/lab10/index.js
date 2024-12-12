@@ -14,7 +14,7 @@ fetch('rss.xml')
       const listItem = document.createElement('li');
       const linkElement = document.createElement('a');
       linkElement.href = link;
-     linkElement.textContent = title;
+      linkElement.textContent = title;
       listItem.appendChild(linkElement);
       newsList.appendChild(listItem);
     });

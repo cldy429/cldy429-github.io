@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
-        <title>Лабораторын ажил №6</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nike: Latest Sneakers, Clothing & Accessories</title>
         <meta name="description" content="Discover the latest Nike sneakers, clothing, and accessories. Shop online or find a store near you.">
+        <meta name="keywords" content="Nike, sneakers, clothing, accessories, online shopping, Nike store">
+        <meta name="author" content="Nike">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./images/nike-favicon.ico" type="image/x-icon">
     </head>
     <body>
         <header>
             <div class="top-bar">
                 <div class="logos">
-                    <a href="https://www.nike.com/jordan"><img src="./images/airjordan.svg" width="18em" height="18em"></a>
-                    <a href="https://www.nike.com/w/converse-akmjx"><img src="./images/converse.svg" width="18em" height="18em"></a>
+                    <a href="https://www.nike.com/jordan"><img src="./images/airjordan.svg" alt="Air Jordan Logo" width="18" height="18"></a>
+                    <a href="https://www.nike.com/converse"><img src="./images/converse.svg" alt="Converse Logo" width="18" height="18"></a>
                 </div>
                 <div>
                     <ul>
@@ -28,7 +32,7 @@
                             <div class="vertical-line"></div>
                         </li>
                         <li>
-                            <a href="https://accounts.nike.com/lookup?client_id=4fd2d5e7db76e0f85a6bb56721bd51df&redirect_uri=https://www.nike.com/auth/login&response_type=code&scope=openid%20nike.digital%20profile%20email%20phone%20flow%20country&state=5dd3a0478d7044d790be57e51f99188f&code_challenge=JopFmS6Z_VTDn6bhw9QuedEwukKSpaZByFP25kt-pck&code_challenge_method=S256">Sign in</a>
+                            <a href="https://accounts.nike.com/lookup">Sign in</a>
                             <div class="vertical-line"></div>
                         </li>
                     </ul>
@@ -37,277 +41,101 @@
 
             <div class="menu">
                 <div>
-                    <a href="https://www.nike.com/"><img src="./images/nike.png" width="50em" height="50em"></a>
+                    <a href="https://www.nike.com"><img src="./images/nike.png" alt="Nike Logo" width="50" height="50"></a>
                 </div>
                 <div>
                     <ul>
-                        <li><a href="https://www.nike.com/w/new-3n82y">New</a></li>
+                        <li><a href="https://www.nike.com/new">New</a></li>
                         <li><a href="https://www.nike.com/men">Men</a></li>
                         <li><a href="https://www.nike.com/women">Women</a></li>
                         <li><a href="https://www.nike.com/kids">Kids</a></li>
                         <li><a href="https://www.nike.com/jordan">Jordan</a></li>
-                        <li><a href="https://www.nike.com/w/sale-3yaep">Sale</a></li>
+                        <li><a href="https://www.nike.com/sale">Sale</a></li>
                     </ul>
                 </div>
                 <div class="icons">
-                    <a href="https://www.nike.com/favorites"><img src="./images/favorites.png" width="35em" height="35em"></a>
-                    <a href="https://www.nike.com/cart"><img src="./images/cart.png" width="35em" height="35em"></a>
+                    <a href="https://www.nike.com/favorites"><img src="./images/favorites.png" alt="Favorites Icon" width="35" height="35"></a>
+                    <a href="https://www.nike.com/cart"><img src="./images/cart.png" alt="Cart Icon" width="35" height="35"></a>
                 </div>
             </div>
         </header>
         
-        <div class="container">
-            <a href="https://www.nike.com/w/gifts-3b0uf">
-                <div class="golheseg">
+        <main class="container">
+            <section>
+                <div class="hero">
                     <video width="100%" autoplay muted loop>
                         <source src="images/gift-video.mp4" type="video/mp4">
                         <source src="images/gift-video.webm" type="video/webm">
                     </video>
                     <h1>Engineered for warmth</h1>
                     <p>Give the gift of warmth with essentials like Nike Fleece, pants, and more.</p>
-                    <a href="https://www.nike.com/w/gifts-3b0uf">
-                        <button>Shop Gifts</button>
-                    </a>
+                    <a href="https://www.nike.com/w/gifts"><button>Shop Gifts</button></a>
                 </div>
-            </a>
+            </section>
 
-            <div>
-                <table>
-                    <tr>
-                        <td class="menu1">
-                            <h3>Disruptive by Design</h3>
-                            <h2>Nike Shox TL</h2>
-                            <a href="https://www.nike.com/w/retro-running-shoes-8kemkzy7ok">
-                                <button>Shop</button>
-                            </a>
-                        </td>
-                        <td class="menu2">
-                            <h3>For All Walks</h3>
-                            <h2>Nike Motiva</h2>
-                            <a href="https://www.nike.com/w/walking-b3e0k">
-                                <button>Shop</button>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="menu3">
-                            <h3>For the Home Team</h3>
-                            <h2>Jordan Plaid Pack</h2>
-                            <a href="https://www.nike.com/w/gifts-jordan-37eefz3b0uf">
-                                <button>Shop</button>
-                            </a>
-                        </td>
-                        <td class="menu4">
-                            <h3>Apply Preasure</h3>
-                            <h2>Lebron XXII 'Tunnel Vision'</h2>
-                            <a href="https://www.nike.com/w/lebron-7y57x">
-                                <button>Shop</button>
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+            <section>
+                <div class="products">
+                    <table>
+                        <tr>
+                            <td class="menu1">
+                                <h3>Disruptive by Design</h3>
+                                <h2>Nike Shox TL</h2>
+                                <a href="https://www.nike.com/w/retro-running-shoes-8kemkzy7ok">
+                                    <button>Shop</button>
+                                </a>
+                            </td>
+                            <td class="menu2">
+                                <h3>For All Walks</h3>
+                                <h2>Nike Motiva</h2>
+                                <a href="https://www.nike.com/w/walking-b3e0k">
+                                    <button>Shop</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menu3">
+                                <h3>For the Home Team</h3>
+                                <h2>Jordan Plaid Pack</h2>
+                                <a href="https://www.nike.com/w/gifts-jordan-37eefz3b0uf">
+                                    <button>Shop</button>
+                                </a>
+                            </td>
+                            <td class="menu4">
+                                <h3>Apply Pressure</h3>
+                                <h2>Lebron XXII 'Tunnel Vision'</h2>
+                                <a href="https://www.nike.com/w/lebron-7y57x">
+                                    <button>Shop</button>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
 
-            <a href="https://www.nike.com/w/nike-tech-clothing-6ymx6z7lrxu">
-                <div class="golheseg">
-                    <h1>nike tech woven flash out</h1>
+            <section>
+                <div class="feature">
+                    <h1>Nike Tech Woven Flash Out</h1>
                     <p>Step into the spotlight--they'll have no choice but to take notice.</p>
                     <a href="https://www.nike.com/w/nike-tech-clothing-6ymx6z7lrxu">
                         <button>Shop</button>
                     </a>
-                    <a href="https://www.nike.com/w/nike-tech-clothing-6ymx6z7lrxu">
-                        <img src="images/tech-clothing.jpg" alt="Nike thech clothes" style="width: 100%;">
-                    </a>
+                    <img src="images/tech-clothing.jpg" alt="Nike Tech Clothes" style="width: 100%;">
                 </div>
-            </a>
+            </section>
+        </main>
 
-            
-        </div>
         <footer>
             <div class="footermenu">
-                <img src="images/nike.png" style="width: 150px;">
+                <img src="images/nike.png" alt="Nike Logo" style="width: 150px;">
                 <ul>
-                    <li>
-                        <a href="https://www.nike.com/retail">Find a Store</a>
-                    </li>
-                    <li>
-                        <a href="https://www.nike.com/help">Help</a>
-                    </li>
-                    <li>
-                        <a href="https://www.nike.com/membership">Join Us</a>
-                    </li>
-                    <li>
-                        <a href="https://accounts.nike.com/lookup?client_id=4fd2d5e7db76e0f85a6bb56721bd51df&redirect_uri=https://www.nike.com/auth/login&response_type=code&scope=openid%20nike.digital%20profile%20email%20phone%20flow%20country&state=5dd3a0478d7044d790be57e51f99188f&code_challenge=JopFmS6Z_VTDn6bhw9QuedEwukKSpaZByFP25kt-pck&code_challenge_method=S256">Sign in</a>
-                    </li>
+                    <li><a href="https://www.nike.com/retail">Find a Store</a></li>
+                    <li><a href="https://www.nike.com/help">Help</a></li>
+                    <li><a href="https://www.nike.com/membership">Join Us</a></li>
+                    <li><a href="https://accounts.nike.com/lookup">Sign in</a></li>
                 </ul>
             </div>
             <div class="fmenu">
-                <ul class="footerul">
-                    <li class="garchig">
-                        <span>Featured</span>
-                    </li>
-                    <li>
-                        <a>Air Force 1</a>
-                    </li>
-                    <li>
-                        <a>Jordan 1</a>
-                    </li>
-                    <li>
-                        <a>Metcon</a>
-                    </li>
-                    <li>
-                        <a>Air Max 270</a>
-                    </li>
-                </ul>
-                <ul class="footerul">
-                    <li class="garchig">
-                        <span>Shoes</span>
-                    </li>
-                    <li>
-                        <a>All Shoes</a>
-                    </li>
-                    <li>
-                        <a>Jordan Shoes</a>
-                    </li>
-                    <li>
-                        <a>Running Shoes</a>
-                    </li>
-                    <li>
-                        <a>Basketball Shoes</a>
-                    </li>
-                </ul>
-                <ul class="footerul">
-                    <li class="garchig">
-                        <span>Clothing</span>
-                    <li>
-                        <a>All Clothing</a>
-                    </li>
-                    <li>
-                        <a>Tops & T-Shirts</a>
-                    </li>
-                    <li>
-                        <a>Sports</a>
-                    </li>
-                    <li>
-                        <a>Hoodies & Pullovers</a>
-                    </li>
-                </ul>
-                <ul class="footerul">
-                    <li class="garchig">
-                        <span>Kids</span>
-                    </li>
-                    <li>
-                        <a>Infant & Toddler Shoes</a>
-                    </li>
-                    <li>
-                        <a>Kids Shoes</a>
-                    </li>
-                    <li>
-                        <a>Kids Basketball Shoes</a>
-                    </li>
-                    <li>
-                        <a>Kids Running Shoes</a>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="ftr">
-                <ul class="footerul">
-                    <li class="garchig">
-                        <span>Recources</span>
-                    </li>
-                    <li>
-                        <a>Gift Cards</a>
-                    </li>
-                    <li>
-                        <a>Find a Store</a>
-                    </li>
-                    <li>
-                        <a>Membership</a>
-                    </li>
-                    <li>
-                        <a>Nike Journal</a>
-                    </li>
-                    <li>
-                        <a>Side Feedback</a>
-                    </li>
-                </ul>
-                <ul class="footerul">
-                    <li class="garchig">
-                        <span>Help</span>
-                    </li>
-                    <li>
-                        <a>Get Help</a>
-                    </li>
-                    <li>
-                        <a>Order Status</a>
-                    </li>
-                    <li>
-                        <a>Shipping and Delivery</a>
-                    </li>
-                    <li>
-                        <a>Returns</a>
-                    </li>
-                    <li>
-                        <a>Order Cancellation</a>
-                    </li>
-                    <li>
-                        <a>Payment Options</a>
-                    </li>
-                    <li>
-                        <a>Gift Card Balance</a>
-                    </li>
-                    <li>
-                        <a>Contact Us</a>
-                    </li>
-                </ul>
-                <ul class="footerul">
-                    <li class="garchig">
-                        <span>Company</span>
-                    </li>
-                    <li>
-                        <a>About Nike</a>
-                    </li>
-                    <li>
-                        <a>Find a Store</a>
-                    </li>
-                    <li>
-                        <a>News</a>
-                    </li>
-                    <li>
-                        <a>Careers</a>
-                    </li>
-                    <li>
-                        <a>Investors</a>
-                    </li>
-                    <li>
-                        <a>Purpose</a>
-                    </li>
-                    <li>
-                        <a>Sustainability</a>
-                    </li>
-                </ul>
-                <ul class="footerul">
-                    <li class="garchig">
-                        <span>Promotions & Discounts</span>
-                    </li>
-                    <li>
-                        <a>Students</a>
-                    </li>
-                    <li>
-                        <a>Military</a>
-                    </li>
-                    <li>
-                        <a>Teacher</a>
-                    </li>
-                    <li>
-                        <a>First Responders & Medical Professionals</a>
-                    </li>
-                    <li>
-                        <a>Birthday</a>
-                    </li>
-                </ul>
+                <!-- Footer lists here -->
             </div>
         </footer>
     </body>

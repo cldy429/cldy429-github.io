@@ -14,7 +14,6 @@ const win = document.querySelector(".gameover");
 const playBtn = document.querySelector(".play-again");
 
 let randomAnswer, correct = [], live = 5;
-const minWrong = 0;
 
 const playAgain = () => {
     correct = [];

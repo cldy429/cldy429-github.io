@@ -38,10 +38,3 @@ fetch('rss.xml')
       console.error('Item not found:', itemId);
     }
   })
-  .catch(error => {
-    console.error('Error fetching data:', error);
-    // Handle general errors here, like network errors or parsing issues
-    const errorElement = document.createElement('p');
-    errorElement.textContent = 'An error occurred while fetching the news item.';
-    document.body.appendChild(errorElement);
-  });

@@ -46,7 +46,7 @@ a {
 
 /* details.html -йин css */
 .description {
-    padding: 5%;
+    padding: 2%;
     text-align: justify;
 }
 
@@ -55,6 +55,7 @@ a {
 }
 
 h2 {
+    margin-top: 0;
     text-align: center;
     font-size: 3em;
 }

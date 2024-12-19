@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: 'Balsamiq Sans', sans-serif;
     background-color: beige;
+    text-align: center;
 }
 
 .container {
@@ -15,17 +16,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 
 .game {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
 }
 
 .highlight {
-    width: 50%;
+    width: 30%;
     height: 100%;
     text-align: center;
     display: flex;
@@ -34,36 +38,29 @@ body {
     justify-content: center;
 }
 
-table {
-    width: 80%;
-    border-spacing: 0;
+h3 {
+    font-size: 50px;
 }
 
-td {
-    border: 1px solid;
-    font-size: 20px;
-    text-align: center;
-}
-
-.playername {
-    width: 70%;
+h4 {
+    font-size: 100px;
 }
 
 #simon-board {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    max-width: 300px;
+    max-width: 500px;
     margin-bottom: 1rem;
 }
 
 .simon-btn {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
     background-color: #3498db;
     color: #fff;

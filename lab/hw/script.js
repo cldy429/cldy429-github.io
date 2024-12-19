@@ -4,8 +4,10 @@ const sequence = [];
 // Хэрэглэгчийн оруулсан дараалал
 let userSequence = [];
 let level = 1;
+let highscore = 0;
 
 const levelCount = document.querySelector('.level-count');
+const userName = window.prompt("Enter your name: ");
 
 function togglePower() {
     powerOn = !powerOn;
@@ -97,8 +99,11 @@ function handleClick(button) {
         
         if (!checkSequence()) {
             alert(`Game over! Press Start to retry from level 1.\nFINAL SCORE: ${level}`);
-                togglePower();
-                startGame();
+
+            refreshHighscore();
+
+            togglePower();
+            startGame();
         } else if (userSequence.length === sequence.length) {
             userSequence = [];
             level++;
@@ -124,3 +129,12 @@ function disableButtons() {
     button.setAttribute('disabled', 'true'));
 }
 
+
+function refreshHighscore() {
+    document.querySelector("h3").innerText = userName;
+
+    if (level > highscore) {
+        document.querySelector("h4").innerText = level;
+        highscore = level;
+    }
+}

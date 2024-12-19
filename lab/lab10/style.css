@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: beige;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 2em;
+    padding-top: 0;
+}
+
+header {
+    margin-top: 0;
+    background-color:blueviolet;
+    height: 8em;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+a {
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+/* details.html -йин css */
+.description {
+    padding: 5%;
+    text-align: justify;
+}
+
+.description p {
+    margin: 5px;
+}

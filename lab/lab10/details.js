@@ -11,7 +11,7 @@ fetch('rss.xml')
 
     const items = xmlDoc.querySelectorAll('item');
 
-    // Find the item with the matching title
+    // title-р нь шүүх
     const item = Array.from(items).find(item => {
       const title = item.querySelector('title').textContent;
       console.log('Comparing titles:', title, itemId);
@@ -30,7 +30,7 @@ fetch('rss.xml')
 
       console.log('Item found:', title, description);
     } else {
-      // Handle the case when the item is not found
+      // Олдоогүй тохиолдолд
       const errorElement = document.createElement('p');
       errorElement.textContent = `News item with ID "${itemId}" not found.`;
       document.body.appendChild(errorElement);

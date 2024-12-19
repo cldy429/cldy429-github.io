@@ -12,22 +12,91 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<h1>Simon Game</h1>
-	
-	<div id="simon-board">
-		<button class="simon-btn top-left" onclick="handleClick(this)" data-color="1" disabled></button>
-		<button class="simon-btn top-right" onclick="handleClick(this)" data-color="2" disabled></button>
-		<button class="simon-btn bottom-left" onclick="handleClick(this)" data-color="3" disabled></button>
-		<button class="simon-btn bottom-right" onclick="handleClick(this)" data-color="4" disabled></button>
-	</div>
-	
-	<div id="level">
-		<span>Level: 
-			<span class="level-count">-</span>
-		</span>
-	</div>
+	<div class="container">
+		<div class="game">
+			<h1>Simon Game</h1>
+			
+			<div id="simon-board">
+				<button class="simon-btn top-left" onclick="handleClick(this)" data-color="1" disabled></button>
+				<button class="simon-btn top-right" onclick="handleClick(this)" data-color="2" disabled></button>
+				<button class="simon-btn bottom-left" onclick="handleClick(this)" data-color="3" disabled></button>
+				<button class="simon-btn bottom-right" onclick="handleClick(this)" data-color="4" disabled></button>
+			</div>
+			
+			<div id="level">
+				<span>Level: 
+					<span class="level-count">-</span>
+				</span>
+			</div>
 
-	<button id="power-btn" onclick="togglePower()">Start</button>
+			<button id="power-btn" onclick="togglePower()">Start</button>
+		</div>
+
+		<div class="highlight">
+			<h2>Leaderboard</h2>
+			<table>
+				<tr>
+					<th>№</th>
+					<th>
+						Player Name
+					</th>
+					<th>
+						Score
+					</th>
+				</tr>
+				<tr class="1">
+					<td>1</td>
+					<td><span class="playerName"></span></td>
+					<td><span class="score"></span></td>
+				</tr>
+				<t class="2">
+					<td>2</td>
+					<td><span class="playerName"></span></td>
+					<td><span class="score"></span></td>
+				</tr>
+				<tr class="3">
+					<td>3</td>
+					<td><span class="playerName"></span></td>
+					<td><span class="score"></span></td>
+				</tr>
+				<tr class="4">
+					<td>4</td>
+					<td><span class="playerName"></span></td>
+					<td><span class="score"></span></td>
+				</tr>
+				<tr class="5">
+					<td>5</td>
+					<td><span class="playerName"></span></td>
+					<td><span class="score"></span></td>
+				</tr>
+				<tr class="6">
+					<td>6</td>
+					<td><span class="playerName"></span></td>
+					<td><span class="score"></span></td>
+				</tr>
+				<tr class="7">
+					<td>7</td>
+					<td><span class="playerName"></span></td>
+					<td><span class="score"></span></td>
+				</tr>
+				<tr class="8">
+					<td>8</td>
+					<td><span class="playerName"></span></td>
+					<td><span class="score"></span></td>
+				</tr>
+				<tr class="9">
+					<td>9</td>
+					<td><span class="playerName"></span></td>
+					<td><span class="score"></span></td>
+				</tr>
+				<tr class="10">
+					<td>10</td>
+					<td><span class="playerName"></span></td>
+					<td><span class="score"></span></td>
+				</tr>
+			</table>
+		</div>
+	</div>
 	<script src="script.js"></script>
 </body>
 

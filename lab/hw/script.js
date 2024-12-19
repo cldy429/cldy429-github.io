@@ -89,26 +89,21 @@ function togglePower() {
 
 function handleClick(button) {
     if (powerOn) {
+        // Button дарангууд 1-4 хооронд тоо авна.
         const userColor = button.getAttribute("data-color");
+        // Тоглогчийн дарсан тоог оруулна.
         userSequence.push(Number(userColor));
         highlightButton(userColor);
+        
         if (!checkSequence()) {
-            alert(`Game over! Press Start to retry 
-                from level 1.\nFINAL SCORE: ${level}`);
+            alert(`Game over! Press Start to retry from level 1.\nFINAL SCORE: ${level}`);
                 togglePower();
                 startGame();
         } else if (userSequence.length === sequence.length) {
             userSequence = [];
             level++;
             levelCount.textContent = level;
-            /*Can change level as per convenience or if we want the game to 
-            continue indefinitely, can omit if-else condition */
-            if (level <= 20) {
-                setTimeout(() => nextRound(), 1000);
-            } else {
-                alert("Congratulations! You won!");
-                startGame();
-            }
+            setTimeout(() => nextRound(), 500);
         }
     }
 }
@@ -121,9 +116,6 @@ function handleClick(button) {
         }
         return true;
     }
-
-
-
 
 function disableButtons() {
     const buttons = document

@@ -1,10 +1,52 @@
 body {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     margin: 0;
     font-family: 'Balsamiq Sans', sans-serif;
+    background-color: beige;
+}
+
+.container {
+    min-width: 1000px;
+    min-height: 700px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.highlight {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 80%;
+    border-spacing: 0;
+}
+
+td {
+    border: 1px solid;
+    font-size: 20px;
+    text-align: center;
+}
+
+.playername {
+    width: 70%;
 }
 
 #simon-board {
@@ -12,7 +54,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     max-width: 300px;
-    text-align: center;
     margin-bottom: 1rem;
 }
 

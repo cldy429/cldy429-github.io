@@ -51,7 +51,6 @@ body {
     padding: 0.25rem 1rem;
 }
 
-#start-btn,
 #power-btn {
     font-family: 'Balsamiq Sans', sans-serif;
     margin-top: 30px;
@@ -66,12 +65,10 @@ body {
     transition: background-color 0.3s;
 }
 
-#start-btn:hover,
 #power-btn:hover {
     background-color: #27ae60;
 }
 
-#start-btn:disabled,
 #power-btn:disabled {
     background-color: #484a4b;
     cursor: not-allowed;

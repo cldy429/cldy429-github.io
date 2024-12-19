@@ -1,41 +1,91 @@
 let powerOn = false;
+// Random-р өгөгдөх дараалал
 const sequence = [];
+// Хэрэглэгчийн оруулсан дараалал
 let userSequence = [];
 let level = 1;
 
 const levelCount = document.querySelector('.level-count');
 
-function startGame() {
-    sequence.length = 0;
-    userSequence.length = 0;
-    level = 1;
-    levelCount.textContent = level;
-    nextRound();
-    document.getElementById("start-btn").disabled = true;
-    document.getElementById("power-btn").disabled = false;
+function togglePower() {
+    powerOn = !powerOn;
+    if (powerOn) {
+        startGame();
+        enableButtons();
+        document.getElementById("start-btn")
+        .disabled = false;
+    } else {
+        userSequence = [];
+        disableButtons();
+        document.getElementById("start-btn")
+        .disabled = true;
+    }
 }
 
-function nextRound() {
-    addToSequence();
-    playSequence();
-}
+    function startGame() {
+        sequence.length = 0;
+        userSequence.length = 0;
+        level = 1;
+        levelCount.textContent = level;
+        nextRound();
+        document.getElementById("power-btn").disabled = false;
+    }
 
-function addToSequence() {
-    const randomColor = Math.floor(Math.random() * 4) + 1;
-    sequence.push(randomColor);
-}
+  
+//   Энэ хэсэг random-р sequence нэмээд түүнийг хэрэглэгчид харуулж байгаа.
+//   Дууссаны дараа button-уудыг enable болгоно
 
-function playSequence() {
-    let i = 0;
-    const intervalId = setInterval(() => {
-        highlightButton(sequence[i]);
-        i++;
-        if (i >= sequence.length) {
-            clearInterval(intervalId);
-            enableButtons();
+
+    function nextRound() {
+        addToSequence();
+        playSequence();
+    }
+
+        function addToSequence() {
+            const randomColor = Math.floor(Math.random() * 4) + 1;
+            sequence.push(randomColor);
         }
-    }, 1000);
-}
+
+        function playSequence() {
+            let i = 0;
+            const intervalId = setInterval(() => {
+                highlightButton(sequence[i]);
+                i++;
+                if (i >= sequence.length) {
+                    clearInterval(intervalId);
+                    enableButtons();
+                }
+            }, 1000);
+        }
+
+            function highlightButton(color) {
+                const button = document
+                .querySelector(`[data-color="${color}"]`);
+                if (Number(color) == 1) {
+                    button.style.backgroundColor = 'lightgreen'
+                }
+                else if (Number(color) == 2) {
+                    button.style.backgroundColor = 'tomato'
+                }
+                else if (Number(color) == 3) {
+                    button.style.backgroundColor = 'yellow'
+                }
+                else if (Number(color) == 4) {
+                    button.style.backgroundColor = 'lightskyblue'
+                }
+                setTimeout(() => {
+                    button.attributes.removeNamedItem('style');
+                }, 300);
+            }
+
+            function enableButtons() {
+                const buttons = document
+                .querySelectorAll('.simon-btn');
+                buttons.forEach(button => 
+                button.removeAttribute('disabled'));
+            }
+        
+// Button дарах үед ажиллах функц
 
 function handleClick(button) {
     if (powerOn) {
@@ -63,41 +113,17 @@ function handleClick(button) {
     }
 }
 
-function checkSequence() {
-    for (let i = 0; i < userSequence.length; i++) {
-        if (userSequence[i] !== sequence[i]) {
-            return false;
+    function checkSequence() {
+        for (let i = 0; i < userSequence.length; i++) {
+            if (userSequence[i] !== sequence[i]) {
+                return false;
+            }
         }
+        return true;
     }
-    return true;
-}
 
-function highlightButton(color) {
-    const button = document
-    .querySelector(`[data-color="${color}"]`);
-    if (Number(color) == 1) {
-        button.style.backgroundColor = 'lightgreen'
-    }
-    else if (Number(color) == 2) {
-        button.style.backgroundColor = 'tomato'
-    }
-    else if (Number(color) == 3) {
-        button.style.backgroundColor = 'yellow'
-    }
-    else if (Number(color) == 4) {
-        button.style.backgroundColor = 'lightskyblue'
-    }
-    setTimeout(() => {
-        button.attributes.removeNamedItem('style');
-    }, 300);
-}
 
-function enableButtons() {
-    const buttons = document
-    .querySelectorAll('.simon-btn');
-    buttons.forEach(button => 
-    button.removeAttribute('disabled'));
-}
+
 
 function disableButtons() {
     const buttons = document
@@ -106,17 +132,3 @@ function disableButtons() {
     button.setAttribute('disabled', 'true'));
 }
 
-function togglePower() {
-    powerOn = !powerOn;
-    if (powerOn) {
-        startGame();
-        enableButtons();
-        document.getElementById("start-btn")
-        .disabled = false;
-    } else {
-        userSequence = [];
-        disableButtons();
-        document.getElementById("start-btn")
-        .disabled = true;
-    }
-}

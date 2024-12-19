@@ -7,14 +7,6 @@ body {
     font-family: 'Balsamiq Sans', sans-serif;
 }
 
-#controls {
-    margin: 20px 0 20px 0;
-}
-
-#strict-mode {
-    margin-right: 20px;
-}
-
 #simon-board {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -1,4 +1,3 @@
-let strictMode = false;
 let powerOn = false;
 const sequence = [];
 let userSequence = [];
@@ -44,20 +43,10 @@ function handleClick(button) {
         userSequence.push(Number(userColor));
         highlightButton(userColor);
         if (!checkSequence()) {
-            if (strictMode) {
-                alert(`Game over! Press Start to retry 
+            alert(`Game over! Press Start to retry 
                 from level 1.\nFINAL SCORE: ${level}`);
                 togglePower();
                 startGame();
-            } else {
-                alert(`Wrong sequence! Press Start to try again
-                from current level.\nFINAL SCORE: ${level}`);
-                userSequence = [];
-                document.getElementById('power-btn')
-                .addEventListener('click', () => {
-                    playSequence();
-                })
-            }
         } else if (userSequence.length === sequence.length) {
             userSequence = [];
             level++;
@@ -115,10 +104,6 @@ function disableButtons() {
     .querySelectorAll('.simon-btn');
     buttons.forEach(button => 
     button.setAttribute('disabled', 'true'));
-}
-
-function toggleStrictMode() {
-    strictMode = !strictMode;
 }
 
 function togglePower() {
